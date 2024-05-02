@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Percobaaan Validation</description>
+   <name>TC001-Validation Response And Varify JSON Value</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ae05da21-47ee-4929-9356-cc6fb159ed95</testCaseGuid>
+</TestCaseEntity>
