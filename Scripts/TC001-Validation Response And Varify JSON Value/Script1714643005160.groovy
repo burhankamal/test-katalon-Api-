@@ -17,5 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+'mengirim request'
 WS.sendRequest(findTestObject('GET/GetListuser'))
+
+'mengirim request dan verifikasi response'
+response = WS.sendRequestAndVerify(findTestObject('GET/GetListuser'))
+
+WS.verifyResponseStatusCode(response, 200)
+
+WS.verifyElementsCount(response, 'data.first_name', 6)
+
+WS.verifyElementPropertyValue(response, 'data[1].first_name', 'Lindsay')
 
